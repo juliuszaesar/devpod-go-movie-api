@@ -9,7 +9,7 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 	fmt.Fprintln(w, "create movie")
 }
 
-func (app *application) readMovieHandler(w http.ResponseWriter, r *http.Request) {
+func (app *application) showMovieHandler(w http.ResponseWriter, r *http.Request) {
 	id, err := app.readIDParam(r)
 	if err != nil {
 		http.NotFound(w, r)
