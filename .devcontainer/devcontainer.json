@@ -1,6 +1,11 @@
 {
   "name": "Go DevContainer",
   "image": "mcr.microsoft.com/vscode/devcontainers/go",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/neovim-homebrew:1": {},
+    "ghcr.io/kreemer/features/stow:1": {},
+    "ghcr.io/devcontainers-extra/features/tmux-homebrew:1": {}
+  },
   "forwardPorts": [4000],
   "customizations": {
     "vscode": {
